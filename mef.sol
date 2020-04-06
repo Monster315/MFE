@@ -216,13 +216,16 @@ view
 returns(uint8 level) 
 {
     uint8 _level = 0;
-     if(_betEth>=31 * ethWei){
+    if(_betEth>=36 * ethWei){
+        _level = 5;
+
+    }esle if(_betEth>=21 * ethWei){
         _level = 4;
 
     }else if(_betEth>=11 * ethWei){
         _level = 3;
 
-    }else if(_betEth>=6 * ethWei){
+    }else if(_betEth>=4 * ethWei){
         _level = 2;
 
     }else if(_betEth>=1 * ethWei){
