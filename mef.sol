@@ -48,7 +48,7 @@ uint256 ethWei = 1 ether;
  mapping (string   => uint256) public pIDInviteCode_;
  mapping (address => uint256)   public pIDxAddr_;      
 
- uint256[30] affRate = [300,200,100,80,50,50,50,50,50,50,30,30,30,30,30,10,10,10,10,10,5,5,5,5,5,5,5,5,5,5];
+ uint256[30] affRate = [30,20,20,10,10,5,5,5,5,5,3,3,3,3,3,1,1,1,1,1,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3];
  
 uint256 public luckyPot_ = 0;
 uint256 public openLuckycc_ = 100;
@@ -84,11 +84,11 @@ modifier isWithinLimits(uint256 _eth) {
 constructor()
 public
 {
-    levelReward_[1] = levelReward(6,1);
-    levelReward_[2] = levelReward(8,10);
-    levelReward_[3] = levelReward(10,20);
-    levelReward_[4] = levelReward(12,30);
-   
+    levelReward_[1] = levelReward(3,1);
+    levelReward_[2] = levelReward(10,5);
+    levelReward_[3] = levelReward(20,15);
+    levelReward_[4] = levelReward(35,20);
+    levelReward_[5] = levelReward(50,30);
 }
 
 function buyCore(uint256 _pID,uint256 _eth)
